@@ -1,11 +1,11 @@
 public class OnlineShop {
-    private BrazilInventory brazilInventory;
-    private ArgentinaInventory argentinaInventory;
+    private Inventory brazilInventory;
+    private Inventory argentinaInventory;
 
     public OnlineShop()
     {
-        brazilInventory = new BrazilInventory();
-        argentinaInventory = new ArgentinaInventory();
+        brazilInventory = new Inventory(100);
+        argentinaInventory = new Inventory(50);
     }
 
     public int PlaceOrder(int selectedLocation,int numberOfiPodsToOrder){
